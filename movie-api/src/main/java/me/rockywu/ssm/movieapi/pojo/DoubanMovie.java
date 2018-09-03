@@ -1,4 +1,4 @@
-package me.rockywu.ssm.movieapi.controller;
+package me.rockywu.ssm.movieapi.pojo;
 
 import java.util.Date;
 
@@ -49,6 +49,8 @@ public class DoubanMovie {
         this.originRelease = originRelease;
     }
 
-
-
+    @Override
+    public String toString() {
+        return  this.getName();
+    }
 }
