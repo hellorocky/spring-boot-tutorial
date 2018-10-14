@@ -3,51 +3,37 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>me.rockywu.movie</groupId>
 	<artifactId>movie-api</artifactId>
 	<version>1.0.0-RELEASE</version>
 	<packaging>jar</packaging>
 
 	<name>movie-api</name>
-	<description>Demo project for Spring Boot</description>
+	<description>电影接口服务</description>
 
 	<parent>
-		<groupId>me.rockywu.movie</groupId>
+		<groupId>me.rockywu.ssm</groupId>
 		<artifactId>spring-boot-tutorial</artifactId>
 		<version>1.0.0-RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-	</properties>
-
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
+        <!-- 开发者工具，当classpath下有文件更新自动触发应用重启 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+			<artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
 	</dependencies>
 
 	<build>
